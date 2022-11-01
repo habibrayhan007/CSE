@@ -1,0 +1,4883 @@
+{
+	"info": {
+		"_postman_id": "7d01b9cd-3c77-4f0b-bf22-7edadca27f49",
+		"name": "student-mentorship-api-updated",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "db",
+			"item": [
+				{
+					"name": "career",
+					"item": [
+						{
+							"name": "skill table",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/db/create-table/skill",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"db",
+										"create-table",
+										"skill"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "sub skill table (html,js)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/db/create-table/sub-skill",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"db",
+										"create-table",
+										"sub-skill"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "question table (what is html?)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/db/create-table/question",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"db",
+										"create-table",
+										"question"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "student skill list table",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/db/create-table/student_skill_list",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"db",
+										"create-table",
+										"student_skill_list"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "create db",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/db/create-db",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"db",
+								"create-db"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create table ticket",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://api.zulkar.me/db/create-table/ticket",
+							"protocol": "http",
+							"host": [
+								"api",
+								"zulkar",
+								"me"
+							],
+							"path": [
+								"db",
+								"create-table",
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create-table ticket_chat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://api.zulkar.me/db/create-table/ticket_chat",
+							"protocol": "http",
+							"host": [
+								"api",
+								"zulkar",
+								"me"
+							],
+							"path": [
+								"db",
+								"create-table",
+								"ticket_chat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create user table",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://api.zulkar.me/db/create-table/users",
+							"protocol": "http",
+							"host": [
+								"api",
+								"zulkar",
+								"me"
+							],
+							"path": [
+								"db",
+								"create-table",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/db/create-student",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://api.zulkar.me/db/create-table/students",
+							"protocol": "http",
+							"host": [
+								"api",
+								"zulkar",
+								"me"
+							],
+							"path": [
+								"db",
+								"create-table",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/db/create-ao",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "student_id",
+									"value": "\"18103011\"",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "014555",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "photo_url",
+									"value": "asdfasdfasdfsadfdsf",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://api.zulkar.me/db/create-table/ao",
+							"protocol": "http",
+							"host": [
+								"api",
+								"zulkar",
+								"me"
+							],
+							"path": [
+								"db",
+								"create-table",
+								"ao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create todo table",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://api.zulkar.me/db/create-table/todo",
+							"protocol": "http",
+							"host": [
+								"api",
+								"zulkar",
+								"me"
+							],
+							"path": [
+								"db",
+								"create-table",
+								"todo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "test db",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://54.237.56.192:2727/db/test",
+							"protocol": "http",
+							"host": [
+								"54",
+								"237",
+								"56",
+								"192"
+							],
+							"port": "2727",
+							"path": [
+								"db",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "db/create-table/department",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/db/create-table/department",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"db",
+								"create-table",
+								"department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "db/create-table/faculty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://api.zulkar.me/db/create-table/faculty",
+							"protocol": "http",
+							"host": [
+								"api",
+								"zulkar",
+								"me"
+							],
+							"path": [
+								"db",
+								"create-table",
+								"faculty"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "db/create-table/notice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://api.zulkar.me/db/create-table/notice",
+							"protocol": "http",
+							"host": [
+								"api",
+								"zulkar",
+								"me"
+							],
+							"path": [
+								"db",
+								"create-table",
+								"notice"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ticket/support",
+			"item": [
+				{
+					"name": "get ticket list",
+					"item": [
+						{
+							"name": "a/o panel(pending,completed,processing,snoozed)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/support/get/ticket/ticket_state/processing/assigned_user_id/2/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"support",
+										"get",
+										"ticket",
+										"ticket_state",
+										"processing",
+										"assigned_user_id",
+										"2",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "a/o panel(pending)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/support/get/ticket/ticket_state/pending/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"support",
+										"get",
+										"ticket",
+										"ticket_state",
+										"pending",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "student panel(student_id=1730324)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/support/get/ticket/student_id/17303024/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"support",
+										"get",
+										"ticket",
+										"student_id",
+										"17303024",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get single ticket",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/support/get-one/ticket/id/7/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"support",
+										"get-one",
+										"ticket",
+										"id",
+										"7",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "update ticket",
+					"item": [
+						{
+							"name": "update ticket -> snoozed by id",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "ticket_state",
+											"value": "snoozed",
+											"type": "text"
+										},
+										{
+											"key": "reschedule_reason",
+											"value": "account section is off",
+											"description": "only for snoozed state",
+											"type": "text"
+										},
+										{
+											"key": "reschedule_date",
+											"value": "2021-3-20",
+											"description": "only for snoozed state",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:2727/support/update-ticket/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"support",
+										"update-ticket",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "udate ticket state by id",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "ticket_state",
+											"value": "completed",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:2727/support/update-ticket/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"support",
+										"update-ticket",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "assign a AO id to ticket",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "assigned_user_id",
+											"value": "2",
+											"description": "a/o user id",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:2727/support/update-ticket/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"support",
+										"update-ticket",
+										"7"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "create ticket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "student_id",
+									"value": "17303024",
+									"type": "text"
+								},
+								{
+									"key": "assigned_user_id",
+									"value": "AO_U2",
+									"description": "optional",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "ticket_title",
+									"value": "just new ticket created ",
+									"type": "text"
+								},
+								{
+									"key": "ticket_dept",
+									"value": "acount problem",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "this is first message with my problem",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2727/support/create-ticket",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"support",
+								"create-ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create a single message/ticket chat",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ticket_id",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "sender_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "ok let us check , no worries",
+									"type": "text"
+								},
+								{
+									"key": "img_url",
+									"value": "http://ab.png",
+									"description": "optional",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2727/support/create-message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"support",
+								"create-message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show all message of a ticket",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/support/get/ticket_chat/ticket_id/4/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"support",
+								"get",
+								"ticket_chat",
+								"ticket_id",
+								"4",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "show all message of a ticket",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/support/get/ticket_chat/ticket_id/4/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"support",
+										"get",
+										"ticket_chat",
+										"ticket_id",
+										"4",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1335"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"537-ELEfm03jwuEgAgADRjXMYOfO/64\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 May 2021 18:13:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"all ticket_id from ticket_chat list\",\n    \"response\": [\n        {\n            \"id\": 72,\n            \"ticket_id\": \"4\",\n            \"message\": \"ok\",\n            \"img_url\": \"NOT_SET\",\n            \"sender_id\": \"2\",\n            \"created_at\": \"2021-04-18T20:39:07.000Z\"\n        },\n        {\n            \"id\": 71,\n            \"ticket_id\": \"4\",\n            \"message\": \"ok good now\",\n            \"img_url\": \"NOT_SET\",\n            \"sender_id\": \"2\",\n            \"created_at\": \"2021-04-18T20:38:59.000Z\"\n        },\n        {\n            \"id\": 70,\n            \"ticket_id\": \"4\",\n            \"message\": \"hey\",\n            \"img_url\": \"NOT_SET\",\n            \"sender_id\": \"2\",\n            \"created_at\": \"2021-04-18T20:38:55.000Z\"\n        },\n        {\n            \"id\": 69,\n            \"ticket_id\": \"4\",\n            \"message\": \"hi\",\n            \"img_url\": \"NOT_SET\",\n            \"sender_id\": \"17303024\",\n            \"created_at\": \"2021-04-18T20:38:51.000Z\"\n        },\n        {\n            \"id\": 68,\n            \"ticket_id\": \"4\",\n            \"message\": \"all good?\",\n            \"img_url\": \"NOT_SET\",\n            \"sender_id\": \"17303024\",\n            \"created_at\": \"2021-04-18T20:35:34.000Z\"\n        },\n        {\n            \"id\": 67,\n            \"ticket_id\": \"4\",\n            \"message\": \"how is gooing\",\n            \"img_url\": \"NOT_SET\",\n            \"sender_id\": \"17303024\",\n            \"created_at\": \"2021-04-18T20:35:31.000Z\"\n        },\n        {\n            \"id\": 66,\n            \"ticket_id\": \"4\",\n            \"message\": \"yeah i am here\",\n            \"img_url\": \"NOT_SET\",\n            \"sender_id\": \"17303024\",\n            \"created_at\": \"2021-04-18T20:35:25.000Z\"\n        },\n        {\n            \"id\": 65,\n            \"ticket_id\": \"4\",\n            \"message\": \"hi bro\",\n            \"img_url\": \"NOT_SET\",\n            \"sender_id\": \"2\",\n            \"created_at\": \"2021-04-18T20:35:19.000Z\"\n        },\n        {\n            \"id\": 64,\n            \"ticket_id\": \"4\",\n            \"message\": \"hey man\",\n            \"img_url\": \"NOT_SET\",\n            \"sender_id\": \"2\",\n            \"created_at\": \"2021-04-18T20:35:14.000Z\"\n        },\n        {\n            \"id\": 63,\n            \"ticket_id\": \"4\",\n            \"message\": \"hwo are\",\n            \"img_url\": \"NOT_SET\",\n            \"sender_id\": \"17303024\",\n            \"created_at\": \"2021-04-18T20:01:23.000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "search a ticket by id or title",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/support/search/17303024",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"support",
+								"search",
+								"17303024"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search into ticket chat list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/support/search-message/3/this",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"support",
+								"search-message",
+								"3",
+								"this"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get ao summary",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/support/summary/student/17303024",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"support",
+								"summary",
+								"student",
+								"17303024"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get student summary",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/support/summary/ao/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"support",
+								"summary",
+								"ao",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "test user",
+			"item": [
+				{
+					"name": "sign up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "test@iubat.edu",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "1234567",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2727/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "test@iubat.edu",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "1234567",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2727/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/auth/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isLoggedIn",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/auth/is-loggedin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"auth",
+								"is-loggedin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "student",
+			"item": [
+				{
+					"name": "/student/signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "student_id",
+									"value": "17303024",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "milon",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "m@g.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "234234234",
+									"type": "text"
+								},
+								{
+									"key": "parents_phone",
+									"value": "523423",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "photo_url",
+									"value": "http://a.png",
+									"type": "text"
+								},
+								{
+									"key": "present_address",
+									"value": "dhaka",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://v1.freeconvert.xyz/student/signup",
+							"protocol": "http",
+							"host": [
+								"v1",
+								"freeconvert",
+								"xyz"
+							],
+							"path": [
+								"student",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/student/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "jokermr143@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2727/student/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"student",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/student/logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://v1.freeconvert.xyz/student/logout",
+							"protocol": "http",
+							"host": [
+								"v1",
+								"freeconvert",
+								"xyz"
+							],
+							"path": [
+								"student",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/student/isLoggedIn",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://v1.freeconvert.xyz/student/is-loggedin",
+							"protocol": "http",
+							"host": [
+								"v1",
+								"freeconvert",
+								"xyz"
+							],
+							"path": [
+								"student",
+								"is-loggedin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/student/get-one/:table/:field/:value",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"student",
+								"get-one",
+								":table",
+								":field",
+								":value"
+							],
+							"variable": [
+								{
+									"key": "table",
+									"value": "students"
+								},
+								{
+									"key": "field",
+									"value": "student_id"
+								},
+								{
+									"key": "value",
+									"value": "17303024"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get one",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/student/get-one/:table/:field/:value",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"student",
+										"get-one",
+										":table",
+										":field",
+										":value"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "students"
+										},
+										{
+											"key": "field",
+											"value": "student_id"
+										},
+										{
+											"key": "value",
+											"value": "17303024"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "359"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"167-87hf7CAY69BeAlsFvFE0BMHCVQc\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 06 Aug 2021 14:17:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Object get Successfully\",\n    \"response\": {\n        \"id\": 6,\n        \"student_id\": \"17303024\",\n        \"email\": \"jokermr143@gmail.com\",\n        \"present_address\": \"Uttara\",\n        \"name\": \"Milon27\",\n        \"is_verified\": 1,\n        \"parents_phone\": \"015\",\n        \"password\": \"$2a$10$zlmrKSk7piynmqj2KN0tiOoCCvFwzVAn4AXcEb57jTdxcPnFdZRu6\",\n        \"phone\": \"0172\",\n        \"photo_url\": \"NOT_SET\",\n        \"created_at\": \"2021-03-14T17:20:21.000Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ao",
+			"item": [
+				{
+					"name": "/ao/signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "rijon",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "rijon@yahoo.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "234234234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "photo_url",
+									"value": "asdfasdf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2727/ao/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"ao",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ao/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "jokermr143@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2727/ao/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"ao",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ao/logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/ao/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"ao",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ao/isLoggedIn",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/ao/is-loggedin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"ao",
+								"is-loggedin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all ao",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/data/get-all/ao/id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"data",
+								"get-all",
+								"ao",
+								"id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "todo",
+			"item": [
+				{
+					"name": "create todo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "title of todo",
+									"type": "text"
+								},
+								{
+									"key": "dead_line",
+									"value": "2021-04-6",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2727/todo/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"todo",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mark as completed todo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "feedback",
+									"value": "Great Work",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2727/todo/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"todo",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete todo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/todo/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"todo",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all todo [in progress]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/todo/6/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"todo",
+								"6",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all todo [completed]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/todo/6/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"todo",
+								"6",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get undone todos for next 7 days",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/todo/upto/7/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"todo",
+								"upto",
+								"7",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "department",
+			"item": [
+				{
+					"name": "0. dept signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "jokermr143@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Mr J",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2727/department/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"department",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1. dept  login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "jokermr143@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2727/department/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"department",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2. logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/department/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"department",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4.isloggedin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/department/is-loggedin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"department",
+								"is-loggedin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get ticket summery for dept",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/support/summary/dept/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"support",
+								"summary",
+								"dept",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2021-03-1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get ticket summery for dept",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/support/summary/dept/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"support",
+										"summary",
+										"dept",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2021-04-19",
+											"description": "date upto query happen"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "132"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"84-1RA4Q8YlG+abZO8qlbkD860W5z0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 31 Jul 2021 17:04:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"ticket summary\",\n    \"response\": {\n        \"total_pending\": 0,\n        \"total_processing\": 2,\n        \"total_snoozed\": 1,\n        \"total_completed\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get ticket assign summery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/support/ticket-assign-summery/:date",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"support",
+								"ticket-assign-summery",
+								":date"
+							],
+							"variable": [
+								{
+									"key": "date",
+									"value": "2021-08-14",
+									"description": "2020-07-20"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get ticket assign summery",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/support/ticket-assign-summery/:date",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"support",
+										"ticket-assign-summery",
+										":date"
+									],
+									"variable": [
+										{
+											"key": "date",
+											"value": "2020-07-20"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1555"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"613-c+7NsKEvw9qb6LzKcIzl0JG/nY4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Aug 2021 18:23:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"ticket Assign summary\",\n    \"response\": [\n        {\n            \"id\": 1,\n            \"name\": \"rijon\",\n            \"total_processing\": 1,\n            \"total_completed\": 0,\n            \"tickets\": [\n                {\n                    \"id\": 2,\n                    \"student_id\": \"17303024\",\n                    \"ticket_title\": \"ticket one\",\n                    \"ticket_dept\": \"CSE_AO\",\n                    \"assigned_user_id\": \"1\",\n                    \"ticket_state\": \"processing\",\n                    \"reschedule_reason\": \"NOT_SET\",\n                    \"reschedule_date\": \"2021-04-12T12:07:25.000Z\",\n                    \"created_at\": \"2021-04-12T12:07:25.000Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"name\": \"milon27\",\n            \"total_processing\": 3,\n            \"total_completed\": 1,\n            \"tickets\": [\n                {\n                    \"id\": 4,\n                    \"student_id\": \"17303024\",\n                    \"ticket_title\": \"3rd\",\n                    \"ticket_dept\": \"CSE_AO\",\n                    \"assigned_user_id\": \"2\",\n                    \"ticket_state\": \"completed\",\n                    \"reschedule_reason\": \"NOT_SET\",\n                    \"reschedule_date\": \"2021-01-11T18:00:00.000Z\",\n                    \"created_at\": \"2021-04-12T12:13:00.000Z\"\n                },\n                {\n                    \"id\": 5,\n                    \"student_id\": \"17303024\",\n                    \"ticket_title\": \"new ticket\",\n                    \"ticket_dept\": \"CSE_AO\",\n                    \"assigned_user_id\": \"2\",\n                    \"ticket_state\": \"processing\",\n                    \"reschedule_reason\": \"NOT_SET\",\n                    \"reschedule_date\": \"2021-01-11T18:00:00.000Z\",\n                    \"created_at\": \"2021-04-19T07:10:13.000Z\"\n                },\n                {\n                    \"id\": 6,\n                    \"student_id\": \"17303024\",\n                    \"ticket_title\": \"test new ticket\",\n                    \"ticket_dept\": \"CSE_AO\",\n                    \"assigned_user_id\": \"2\",\n                    \"ticket_state\": \"processing\",\n                    \"reschedule_reason\": \"NOT_SET\",\n                    \"reschedule_date\": \"2021-04-19T07:13:24.000Z\",\n                    \"created_at\": \"2021-04-19T07:13:24.000Z\"\n                },\n                {\n                    \"id\": 7,\n                    \"student_id\": \"17303024\",\n                    \"ticket_title\": \"course offer problem\",\n                    \"ticket_dept\": \"CSE_AO\",\n                    \"assigned_user_id\": \"2\",\n                    \"ticket_state\": \"snoozed\",\n                    \"reschedule_reason\": \"5 trikh e asho.\",\n                    \"reschedule_date\": \"2021-08-04T18:00:00.000Z\",\n                    \"created_at\": \"2021-07-30T16:11:19.000Z\"\n                }\n            ]\n        },\n        {\n            \"total\": 1,\n            \"type\": \"pending\",\n            \"assigned_user_id\": \"NOT_SET\",\n            \"name\": \"Pending\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get ticket summery list with all ticket",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/support/ticket-summery-report/:date",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"support",
+								"ticket-summery-report",
+								":date"
+							],
+							"variable": [
+								{
+									"key": "date",
+									"value": "2021-08-14"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get ticket summery list with all ticket",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/support/ticket-summery-report/:date",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"support",
+										"ticket-summery-report",
+										":date"
+									],
+									"variable": [
+										{
+											"key": "date",
+											"value": "2021-08-14",
+											"description": "2021-03-1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1721"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6b9-JrafZItV1UcAiNXlGchzLMvsSKg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Aug 2021 18:44:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"ticket summary\",\n    \"response\": {\n        \"total_pending\": {\n            \"num\": 1,\n            \"tickets\": [\n                {\n                    \"id\": 3,\n                    \"student_id\": \"17303024\",\n                    \"ticket_title\": \"test\",\n                    \"ticket_dept\": \"CSE_AO\",\n                    \"assigned_user_id\": \"NOT_SET\",\n                    \"ticket_state\": \"pending\",\n                    \"reschedule_reason\": \"NOT_SET\",\n                    \"reschedule_date\": \"2021-04-12T12:10:11.000Z\",\n                    \"created_at\": \"2021-04-12T12:10:11.000Z\"\n                }\n            ]\n        },\n        \"total_processing\": {\n            \"num\": 3,\n            \"tickets\": [\n                {\n                    \"id\": 6,\n                    \"student_id\": \"17303024\",\n                    \"ticket_title\": \"test new ticket\",\n                    \"ticket_dept\": \"CSE_AO\",\n                    \"assigned_user_id\": \"2\",\n                    \"ticket_state\": \"processing\",\n                    \"reschedule_reason\": \"NOT_SET\",\n                    \"reschedule_date\": \"2021-04-19T07:13:24.000Z\",\n                    \"created_at\": \"2021-04-19T07:13:24.000Z\"\n                },\n                {\n                    \"id\": 5,\n                    \"student_id\": \"17303024\",\n                    \"ticket_title\": \"new ticket\",\n                    \"ticket_dept\": \"CSE_AO\",\n                    \"assigned_user_id\": \"2\",\n                    \"ticket_state\": \"processing\",\n                    \"reschedule_reason\": \"NOT_SET\",\n                    \"reschedule_date\": \"2021-01-11T18:00:00.000Z\",\n                    \"created_at\": \"2021-04-19T07:10:13.000Z\"\n                },\n                {\n                    \"id\": 2,\n                    \"student_id\": \"17303024\",\n                    \"ticket_title\": \"ticket one\",\n                    \"ticket_dept\": \"CSE_AO\",\n                    \"assigned_user_id\": \"1\",\n                    \"ticket_state\": \"processing\",\n                    \"reschedule_reason\": \"NOT_SET\",\n                    \"reschedule_date\": \"2021-04-12T12:07:25.000Z\",\n                    \"created_at\": \"2021-04-12T12:07:25.000Z\"\n                }\n            ]\n        },\n        \"total_snoozed\": {\n            \"num\": 1,\n            \"tickets\": [\n                {\n                    \"id\": 7,\n                    \"student_id\": \"17303024\",\n                    \"ticket_title\": \"course offer problem\",\n                    \"ticket_dept\": \"CSE_AO\",\n                    \"assigned_user_id\": \"2\",\n                    \"ticket_state\": \"snoozed\",\n                    \"reschedule_reason\": \"5 trikh e asho.\",\n                    \"reschedule_date\": \"2021-08-04T18:00:00.000Z\",\n                    \"created_at\": \"2021-07-30T16:11:19.000Z\"\n                }\n            ]\n        },\n        \"total_completed\": {\n            \"num\": 1,\n            \"tickets\": [\n                {\n                    \"id\": 4,\n                    \"student_id\": \"17303024\",\n                    \"ticket_title\": \"3rd\",\n                    \"ticket_dept\": \"CSE_AO\",\n                    \"assigned_user_id\": \"2\",\n                    \"ticket_state\": \"completed\",\n                    \"reschedule_reason\": \"NOT_SET\",\n                    \"reschedule_date\": \"2021-01-11T18:00:00.000Z\",\n                    \"created_at\": \"2021-04-12T12:13:00.000Z\"\n                }\n            ]\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "faculty",
+			"item": [
+				{
+					"name": "0. signup (name, phone, email, password, photo_url , room_number)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "jokermr143@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Joker",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "939993",
+									"type": "text"
+								},
+								{
+									"key": "photo_url",
+									"value": "http:://",
+									"type": "text"
+								},
+								{
+									"key": "room_number",
+									"value": "27",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2727/faculty/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"faculty",
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "0. signup (name, phone, email, password, photo_url , room_number)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "jokermr143@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234567",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Joker",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "939993",
+											"type": "text"
+										},
+										{
+											"key": "photo_url",
+											"value": "http:://",
+											"type": "text"
+										},
+										{
+											"key": "room_number",
+											"value": "27",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:2727/faculty/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"faculty",
+										"signup"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Impva2VybXIxNDNAZ21haWwuY29tIiwiaWF0IjoxNjIxNzAzMjM1LCJleHAiOjE2MjM0MTEzMzgzOTF9.ztLg90eZxLeaVsdyqYpyJAdwjMX3YEz6YQU5HWRqNUM; Path=/; Expires=Sun, 23 May 2021 17:07:15 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "365"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"16d-JDhoa4t92r9PbH4JJMQL2HNiCD8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 May 2021 17:07:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"faculty created successfully\",\n    \"response\": {\n        \"name\": \"Joker\",\n        \"phone\": \"939993\",\n        \"email\": \"jokermr143@gmail.com\",\n        \"photo_url\": \"http:://\",\n        \"room_number\": \"27\",\n        \"id\": 1,\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Impva2VybXIxNDNAZ21haWwuY29tIiwiaWF0IjoxNjIxNzAzMjM1LCJleHAiOjE2MjM0MTEzMzgzOTF9.ztLg90eZxLeaVsdyqYpyJAdwjMX3YEz6YQU5HWRqNUM\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "1.  login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "jokermr143@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2727/faculty/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"faculty",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "1.  login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "jokermr143@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234567",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:2727/faculty/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"faculty",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Impva2VybXIxNDNAZ21haWwuY29tIiwiaWF0IjoxNjIxNzAzMjQ5LCJleHAiOjE2MjM0MTEzNTIyNzd9.QfgTizMQGLqQT_8UVRVeGzhSFuqVfjEE3U7njueeYg0; Path=/; Expires=Sun, 23 May 2021 17:07:29 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "407"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"197-y8MdshBuGH4tcuYhaiWxjesLbjI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 May 2021 17:07:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"faculty logged in successfully\",\n    \"response\": {\n        \"id\": 1,\n        \"email\": \"jokermr143@gmail.com\",\n        \"name\": \"Joker\",\n        \"phone\": \"939993\",\n        \"photo_url\": \"http:://\",\n        \"room_number\": \"27\",\n        \"created_at\": \"2021-05-22T17:07:15.000Z\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Impva2VybXIxNDNAZ21haWwuY29tIiwiaWF0IjoxNjIxNzAzMjQ5LCJleHAiOjE2MjM0MTEzNTIyNzd9.QfgTizMQGLqQT_8UVRVeGzhSFuqVfjEE3U7njueeYg0\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "2. logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/faculty/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"faculty",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4.isloggedin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/faculty/is-loggedin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"faculty",
+								"is-loggedin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "career-plan",
+			"item": [
+				{
+					"name": "skill",
+					"item": [
+						{
+							"name": "1. create a skill(web developemnt)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "react dev",
+											"type": "text"
+										},
+										{
+											"key": "intro_url",
+											"value": "https://www.youtube.com/watch?v=VfGW0Qiy2I0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:2727/career/create/:table",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"career",
+										"create",
+										":table"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "skill"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "1. create a skill(web developemnt)",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "title",
+													"value": "web developement",
+													"type": "text"
+												},
+												{
+													"key": "intro_url",
+													"value": "https://www.youtube.com/watch?v=VfGW0Qiy2I0",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:2727/career/create/:table",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "2727",
+											"path": [
+												"career",
+												"create",
+												":table"
+											],
+											"variable": [
+												{
+													"key": "table",
+													"value": "skill"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "163"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"a3-2XE1hoU28tGVXKO1Zjd/IbRtvgY\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 08 Jul 2021 18:16:59 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"New Object Created Succesfully\",\n    \"response\": {\n        \"title\": \"web developement\",\n        \"intro_url\": \"https://www.youtube.com/watch?v=VfGW0Qiy2I0\",\n        \"id\": 1\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "2. udpate a skill",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "web development",
+											"description": "optional",
+											"type": "text"
+										},
+										{
+											"key": "intro_url",
+											"value": "any youtube video link",
+											"description": "optional",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:2727/career/update/:table/:field/:value",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"career",
+										"update",
+										":table",
+										":field",
+										":value"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "skill"
+										},
+										{
+											"key": "field",
+											"value": "id"
+										},
+										{
+											"key": "value",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "2. udpate a skill",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "title",
+													"value": "web development",
+													"description": "optional",
+													"type": "text"
+												},
+												{
+													"key": "intro_url",
+													"value": "any youtube video link",
+													"description": "optional",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:2727/career/update/:table/:field/:value",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "2727",
+											"path": [
+												"career",
+												"update",
+												":table",
+												":field",
+												":value"
+											],
+											"variable": [
+												{
+													"key": "table",
+													"value": "skill"
+												},
+												{
+													"key": "field",
+													"value": "id"
+												},
+												{
+													"key": "value",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "102"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"66-MGK8tgnHpXsnvZKIxz3J1g8bavM\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 08 Jul 2021 18:20:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"Object Updated Succesfully\",\n    \"response\": {\n        \"title\": \"web development\",\n        \"id\": \"1\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "3. delete skill",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/career/delete/:table/:field/:value",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"career",
+										"delete",
+										":table",
+										":field",
+										":value"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "skill"
+										},
+										{
+											"key": "field",
+											"value": "id"
+										},
+										{
+											"key": "value",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "3. delete skill",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:2727/career/delete/:table/:field/:value",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "2727",
+											"path": [
+												"career",
+												"delete",
+												":table",
+												":field",
+												":value"
+											],
+											"variable": [
+												{
+													"key": "table",
+													"value": "skill"
+												},
+												{
+													"key": "field",
+													"value": "id"
+												},
+												{
+													"key": "value",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "76"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"4c-l+s/mVn3OVyyE5nSbx6bfzMdCzI\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 08 Jul 2021 18:24:14 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"Object deleted Succesfully\",\n    \"response\": {\n        \"id\": \"1\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "4. get all skill paginate",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/career/get-paginate/:table/:page",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"career",
+										"get-paginate",
+										":table",
+										":page"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "skill",
+											"description": "table name"
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"description": "page number(10 item per page)"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "4. get all skill paginate",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:2727/career/get-paginate/:table/:page",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "2727",
+											"path": [
+												"career",
+												"get-paginate",
+												":table",
+												":page"
+											],
+											"variable": [
+												{
+													"key": "table",
+													"value": "skill",
+													"description": "table name"
+												},
+												{
+													"key": "page",
+													"value": "1",
+													"description": "page number(10 item per page)"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "192"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"c0-7SPuOO5PCqXtYmTtuIN/PAPQPHA\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 08 Jul 2021 18:29:40 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"Paginate Data Successfully\",\n    \"response\": [\n        {\n            \"id\": 2,\n            \"title\": \"web dev\",\n            \"intro_url\": \"https://www.youtube.com/watch?v=VfGW0Qiy2I0\",\n            \"created_at\": \"2021-07-08T18:24:37.000Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "5. get single skill details",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/career/get-one/:table/:field/:value",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"career",
+										"get-one",
+										":table",
+										":field",
+										":value"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "skill"
+										},
+										{
+											"key": "field",
+											"value": "id"
+										},
+										{
+											"key": "value",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "5. get single skill details",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:2727/career/get-one/:table/:field/:value",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "2727",
+											"path": [
+												"career",
+												"get-one",
+												":table",
+												":field",
+												":value"
+											],
+											"variable": [
+												{
+													"key": "table",
+													"value": "skill"
+												},
+												{
+													"key": "field",
+													"value": "id"
+												},
+												{
+													"key": "value",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "187"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"bb-5v2aBdrYYLLT+PI+VaCfpQaURbU\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 08 Jul 2021 20:16:05 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"Object get Successfully\",\n    \"response\": {\n        \"id\": 2,\n        \"title\": \"web dev\",\n        \"intro_url\": \"https://www.youtube.com/watch?v=VfGW0Qiy2I0\",\n        \"created_at\": \"2021-07-08T18:24:37.000Z\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "6. get subskill of a skill",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/career/get-all/:table/:field/:value",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"career",
+										"get-all",
+										":table",
+										":field",
+										":value"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "sub_skill"
+										},
+										{
+											"key": "field",
+											"value": "skill_id"
+										},
+										{
+											"key": "value",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "6. get subskill of a skill",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:2727/career/get-all/:table/:field/:value",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "2727",
+											"path": [
+												"career",
+												"get-all",
+												":table",
+												":field",
+												":value"
+											],
+											"variable": [
+												{
+													"key": "table",
+													"value": "sub_skill"
+												},
+												{
+													"key": "field",
+													"value": "skill_id"
+												},
+												{
+													"key": "value",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "562"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"232-QW7lIRcM0gOc+Vq4SVkWJNcaVPQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 09 Jul 2021 06:11:12 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"List get Successfully\",\n    \"response\": [\n        {\n            \"id\": 3,\n            \"skill_id\": 2,\n            \"title\": \"js\",\n            \"type\": \"beginner\",\n            \"task\": \"watch this video.\\nhttps://www.youtube.com/watch?v=qz0aGYrrlhU\",\n            \"pass_mark\": 70,\n            \"created_at\": \"2021-07-08T18:46:43.000Z\"\n        },\n        {\n            \"id\": 2,\n            \"skill_id\": 2,\n            \"title\": \"css\",\n            \"type\": \"beginner\",\n            \"task\": \"watch this video.\\nhttps://www.youtube.com/watch?v=qz0aGYrrlhU\",\n            \"pass_mark\": 80,\n            \"created_at\": \"2021-07-08T18:46:29.000Z\"\n        },\n        {\n            \"id\": 1,\n            \"skill_id\": 2,\n            \"title\": \"HTML 5\",\n            \"type\": \"beginner\",\n            \"task\": \"do this this this\",\n            \"pass_mark\": 75,\n            \"created_at\": \"2021-07-08T18:45:57.000Z\"\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "sub skill",
+					"item": [
+						{
+							"name": "1. create a sub skill(html)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "skill_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "js",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "beginner",
+											"description": "beginner,intermidiate,advanced",
+											"type": "text"
+										},
+										{
+											"key": "task",
+											"value": "watch this video.\nhttps://www.youtube.com/watch?v=qz0aGYrrlhU",
+											"type": "text"
+										},
+										{
+											"key": "pass_mark",
+											"value": "70",
+											"description": "in percentage",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:2727/career/create/:table",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"career",
+										"create",
+										":table"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "sub_skill"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "1. create a sub skill(html)",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "skill_id",
+													"value": "2",
+													"type": "text"
+												},
+												{
+													"key": "title",
+													"value": "html",
+													"type": "text"
+												},
+												{
+													"key": "type",
+													"value": "beginner",
+													"description": "beginner,intermidiate,advanced",
+													"type": "text"
+												},
+												{
+													"key": "task",
+													"value": "watch this video.\nhttps://www.youtube.com/watch?v=qz0aGYrrlhU",
+													"type": "text"
+												},
+												{
+													"key": "pass_mark",
+													"value": "90",
+													"description": "in percentage",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:2727/career/create/:table",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "2727",
+											"path": [
+												"career",
+												"create",
+												":table"
+											],
+											"variable": [
+												{
+													"key": "table",
+													"value": "sub_skill"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "215"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"d7-Owt3526Ed4/3KcPVDp8AqsARzLE\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 08 Jul 2021 18:45:57 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"New Object Created Succesfully\",\n    \"response\": {\n        \"skill_id\": \"2\",\n        \"title\": \"html\",\n        \"type\": \"beginner\",\n        \"task\": \"watch this video.\\nhttps://www.youtube.com/watch?v=qz0aGYrrlhU\",\n        \"pass_mark\": \"90\",\n        \"id\": 1\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "2. udpate a sub skill",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "skill_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "HTML 5",
+											"description": "optional",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "beginner",
+											"description": "optional-beginner,intermidiate,advanced",
+											"type": "text"
+										},
+										{
+											"key": "task",
+											"value": "do this this this",
+											"type": "text"
+										},
+										{
+											"key": "pass_mark",
+											"value": "75",
+											"description": "percentage",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:2727/career/update/:table/:field/:value",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"career",
+										"update",
+										":table",
+										":field",
+										":value"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "sub_skill"
+										},
+										{
+											"key": "field",
+											"value": "id"
+										},
+										{
+											"key": "value",
+											"value": "1",
+											"description": "which id?"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "2. udpate a sub skill",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "skill_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "title",
+													"value": "HTML 5",
+													"description": "optional",
+													"type": "text"
+												},
+												{
+													"key": "type",
+													"value": "beginner",
+													"description": "optional-beginner,intermidiate,advanced",
+													"type": "text"
+												},
+												{
+													"key": "task",
+													"value": "do this this this",
+													"type": "text"
+												},
+												{
+													"key": "pass_mark",
+													"value": "75",
+													"description": "percentage",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:2727/career/update/:table/:field/:value",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "2727",
+											"path": [
+												"career",
+												"update",
+												":table",
+												":field",
+												":value"
+											],
+											"variable": [
+												{
+													"key": "table",
+													"value": "sub_skill"
+												},
+												{
+													"key": "field",
+													"value": "id"
+												},
+												{
+													"key": "value",
+													"value": "1",
+													"description": "which id?"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "170"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"aa-7pdcqrL8AeG79KtlLdTtUX4F/gI\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 08 Jul 2021 19:02:14 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"Object Updated Succesfully\",\n    \"response\": {\n        \"skill_id\": \"1\",\n        \"title\": \"HTML 5\",\n        \"type\": \"beginner\",\n        \"task\": \"do this this this\",\n        \"pass_mark\": \"75\",\n        \"id\": \"1\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "3. delete sub skill",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/career/delete/:table/:field/:value",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"career",
+										"delete",
+										":table",
+										":field",
+										":value"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "sub_skill"
+										},
+										{
+											"key": "field",
+											"value": "id"
+										},
+										{
+											"key": "value",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "3. delete sub skill",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:2727/career/delete/:table/:field/:value",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "2727",
+											"path": [
+												"career",
+												"delete",
+												":table",
+												":field",
+												":value"
+											],
+											"variable": [
+												{
+													"key": "table",
+													"value": "sub_skill"
+												},
+												{
+													"key": "field",
+													"value": "id"
+												},
+												{
+													"key": "value",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "77"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"4d-xf8Rp0sITDZJ1dws+2Cg/QXQOzg\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 08 Jul 2021 20:00:39 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"Object deleted Succesfully\",\n    \"response\": {\n        \"id\": \"10\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "4. get all subskill",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/career/get-all/:table",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"career",
+										"get-all",
+										":table"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "sub_skill"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get all subskill",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:2727/career/get-all/:table",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "2727",
+											"path": [
+												"career",
+												"get-all",
+												":table"
+											],
+											"variable": [
+												{
+													"key": "table",
+													"value": "sub_skill"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "562"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"232-HnGUAN9sfCJEUYvLzoQdwNtjSrE\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 08 Jul 2021 20:05:06 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"List get Successfully\",\n    \"response\": [\n        {\n            \"id\": 3,\n            \"skill_id\": 2,\n            \"title\": \"js\",\n            \"type\": \"beginner\",\n            \"task\": \"watch this video.\\nhttps://www.youtube.com/watch?v=qz0aGYrrlhU\",\n            \"pass_mark\": 70,\n            \"created_at\": \"2021-07-08T18:46:43.000Z\"\n        },\n        {\n            \"id\": 2,\n            \"skill_id\": 2,\n            \"title\": \"css\",\n            \"type\": \"beginner\",\n            \"task\": \"watch this video.\\nhttps://www.youtube.com/watch?v=qz0aGYrrlhU\",\n            \"pass_mark\": 80,\n            \"created_at\": \"2021-07-08T18:46:29.000Z\"\n        },\n        {\n            \"id\": 1,\n            \"skill_id\": 1,\n            \"title\": \"HTML 5\",\n            \"type\": \"beginner\",\n            \"task\": \"do this this this\",\n            \"pass_mark\": 75,\n            \"created_at\": \"2021-07-08T18:45:57.000Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "5. get single sub-skill details",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/career/get-one/:table/:field/:value",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"career",
+										"get-one",
+										":table",
+										":field",
+										":value"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "sub_skill"
+										},
+										{
+											"key": "field",
+											"value": "id"
+										},
+										{
+											"key": "value",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "5. get single skill details",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:2727/career/get-one/:table/:field/:value",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "2727",
+											"path": [
+												"career",
+												"get-one",
+												":table",
+												":field",
+												":value"
+											],
+											"variable": [
+												{
+													"key": "table",
+													"value": "skill"
+												},
+												{
+													"key": "field",
+													"value": "id"
+												},
+												{
+													"key": "value",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "187"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"bb-5v2aBdrYYLLT+PI+VaCfpQaURbU\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 08 Jul 2021 20:16:05 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"Object get Successfully\",\n    \"response\": {\n        \"id\": 2,\n        \"title\": \"web dev\",\n        \"intro_url\": \"https://www.youtube.com/watch?v=VfGW0Qiy2I0\",\n        \"created_at\": \"2021-07-08T18:24:37.000Z\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "6. get random 10 q. of a subskill",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/career/random/:table/:field/:value/:limit",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"career",
+										"random",
+										":table",
+										":field",
+										":value",
+										":limit"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "question"
+										},
+										{
+											"key": "field",
+											"value": "sub_skill_id"
+										},
+										{
+											"key": "value",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "6. get random 10 q. of a subskill",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:2727/career/random/:table/:field/:value/:limit",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "2727",
+											"path": [
+												"career",
+												"random",
+												":table",
+												":field",
+												":value",
+												":limit"
+											],
+											"variable": [
+												{
+													"key": "table",
+													"value": "question"
+												},
+												{
+													"key": "field",
+													"value": "sub_skill_id"
+												},
+												{
+													"key": "value",
+													"value": "1"
+												},
+												{
+													"key": "limit",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "239"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"ef-RtVPo+fYWJo4tq0Br+hBmSA95zk\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 11 Jul 2021 08:30:38 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"List get Successfully\",\n    \"response\": [\n        {\n            \"id\": 1,\n            \"sub_skill_id\": 1,\n            \"title\": \"HTML 5 question?\",\n            \"op_1\": \"option1\",\n            \"op_2\": \"option2\",\n            \"op_3\": \"option3\",\n            \"op_4\": \"option4\",\n            \"ans\": \"option1\",\n            \"created_at\": \"2021-07-08T18:50:31.000Z\"\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "questions",
+					"item": [
+						{
+							"name": "1. create a question",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "sub_skill_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "which one is html tag?",
+											"type": "text"
+										},
+										{
+											"key": "op_1",
+											"value": "<input/>",
+											"type": "text"
+										},
+										{
+											"key": "op_2",
+											"value": "<head/>",
+											"type": "text"
+										},
+										{
+											"key": "op_3",
+											"value": "<tag><tag>",
+											"type": "text"
+										},
+										{
+											"key": "op_4",
+											"value": "<at></at>",
+											"type": "text"
+										},
+										{
+											"key": "ans",
+											"value": "<input/>",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:2727/career/create/:table",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"career",
+										"create",
+										":table"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "question"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "1. create a question",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "sub_skill_id",
+													"value": "2",
+													"type": "text"
+												},
+												{
+													"key": "title",
+													"value": "which one is html tag?",
+													"type": "text"
+												},
+												{
+													"key": "op_1",
+													"value": "<input/>",
+													"type": "text"
+												},
+												{
+													"key": "op_2",
+													"value": "<head/>",
+													"type": "text"
+												},
+												{
+													"key": "op_3",
+													"value": "<tag><tag>",
+													"type": "text"
+												},
+												{
+													"key": "op_4",
+													"value": "<at></at>",
+													"type": "text"
+												},
+												{
+													"key": "ans",
+													"value": "<input/>",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:2727/career/create/:table",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "2727",
+											"path": [
+												"career",
+												"create",
+												":table"
+											],
+											"variable": [
+												{
+													"key": "table",
+													"value": "question"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "221"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"dd-7Z9Fiv7zTvHCEkxzNw7wBBA0dCs\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 08 Jul 2021 18:50:31 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"New Object Created Succesfully\",\n    \"response\": {\n        \"sub_skill_id\": \"2\",\n        \"title\": \"which one is html tag?\",\n        \"op_1\": \"<input/>\",\n        \"op_2\": \"<head/>\",\n        \"op_3\": \"<tag><tag>\",\n        \"op_4\": \"<at></at>\",\n        \"ans\": \"<input/>\",\n        \"id\": 1\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "2. udpate a question",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "sub_skill_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "HTML 5 question?",
+											"description": "optional",
+											"type": "text"
+										},
+										{
+											"key": "op_1",
+											"value": "option1",
+											"type": "text"
+										},
+										{
+											"key": "op_2",
+											"value": "option2",
+											"type": "text"
+										},
+										{
+											"key": "op_3",
+											"value": "option3",
+											"type": "text"
+										},
+										{
+											"key": "op_4",
+											"value": "option4",
+											"type": "text"
+										},
+										{
+											"key": "ans",
+											"value": "option1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:2727/career/update/:table/:field/:value",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"career",
+										"update",
+										":table",
+										":field",
+										":value"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "question"
+										},
+										{
+											"key": "field",
+											"value": "id"
+										},
+										{
+											"key": "value",
+											"value": "1",
+											"description": "which id?"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "2. udpate a question",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "sub_skill_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "title",
+													"value": "HTML 5 question?",
+													"description": "optional",
+													"type": "text"
+												},
+												{
+													"key": "op_1",
+													"value": "option1",
+													"type": "text"
+												},
+												{
+													"key": "op_2",
+													"value": "option2",
+													"type": "text"
+												},
+												{
+													"key": "op_3",
+													"value": "option3",
+													"type": "text"
+												},
+												{
+													"key": "op_4",
+													"value": "option4",
+													"type": "text"
+												},
+												{
+													"key": "ans",
+													"value": "option1",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:2727/career/update/:table/:field/:value",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "2727",
+											"path": [
+												"career",
+												"update",
+												":table",
+												":field",
+												":value"
+											],
+											"variable": [
+												{
+													"key": "table",
+													"value": "question"
+												},
+												{
+													"key": "field",
+													"value": "id"
+												},
+												{
+													"key": "value",
+													"value": "1",
+													"description": "which id?"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "206"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"ce-ncgw0euWIf78dLay6mtgAcqnS10\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 08 Jul 2021 19:07:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"Object Updated Succesfully\",\n    \"response\": {\n        \"sub_skill_id\": \"1\",\n        \"title\": \"HTML 5 question?\",\n        \"op_1\": \"option1\",\n        \"op_2\": \"option2\",\n        \"op_3\": \"option3\",\n        \"op_4\": \"option4\",\n        \"ans\": \"option1\",\n        \"id\": \"1\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "3. delete question",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/career/delete/:table/:field/:value",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"career",
+										"delete",
+										":table",
+										":field",
+										":value"
+									],
+									"variable": [
+										{
+											"key": "table",
+											"value": "question"
+										},
+										{
+											"key": "field",
+											"value": "id"
+										},
+										{
+											"key": "value",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "3. delete question",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:2727/career/delete/:table/:field/:value",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "2727",
+											"path": [
+												"career",
+												"delete",
+												":table",
+												":field",
+												":value"
+											],
+											"variable": [
+												{
+													"key": "table",
+													"value": "question"
+												},
+												{
+													"key": "field",
+													"value": "id"
+												},
+												{
+													"key": "value",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "77"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"4d-xf8Rp0sITDZJ1dws+2Cg/QXQOzg\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 08 Jul 2021 20:01:24 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"Object deleted Succesfully\",\n    \"response\": {\n        \"id\": \"10\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get list of skill for a student",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/career/student/:student_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"career",
+								"student",
+								":student_id"
+							],
+							"variable": [
+								{
+									"key": "student_id",
+									"value": "17303024"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "notice",
+			"item": [
+				{
+					"name": "0. add notice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "publisher_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Come to dept all of you.",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Come to dept all of you  on <b>22-1-2021</b>",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2727/notice/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"notice",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "0. add notice",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "publisher_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "course offering 22-1-2021",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "your course offering  on 22-1-2021",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:2727/notice/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"notice",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "184"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b8-xLAL+bQweGVOwm4Y31CJhjXRvfg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 May 2021 17:34:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"New Notice Created Succesfully\",\n    \"response\": {\n        \"publisher_id\": \"2\",\n        \"title\": \"course offering 22-1-2021\",\n        \"description\": \"your course offering  on 22-1-2021\",\n        \"id\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "1. update notice",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Course Offering Spring 2021",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Course Offering Spring 2021 on <b> 25 march</b>",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2727/notice/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"notice",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "1. update notice",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "Course Offering Spring 2021",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Course Offering Spring 2021 on <b> 25 march</b>",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:2727/notice/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"notice",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "176"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b0-8REIF44QDdJVtMNWjjp7dcT586w\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 May 2021 17:51:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Notice Updated Succesfully\",\n    \"response\": {\n        \"id\": 2,\n        \"title\": \"Course Offering Spring 2021\",\n        \"description\": \"Course Offering Spring 2021 on <b> 25 march</b>\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "2. get 7 notice to show in dahsboard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/notice/get-recent/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"notice",
+								"get-recent",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "2. get 7 notice to show in dahsboard",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/notice/get-recent/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"notice",
+										"get-recent",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "217"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d9-DEYGJw3Kw7LeNsyIWTlue+qh/AQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 May 2021 18:23:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"all list\",\n    \"response\": [\n        {\n            \"id\": 2,\n            \"publisher_id\": 2,\n            \"title\": \"Course Offering Spring 2021\",\n            \"description\": \"Course Offering Spring 2021 on <b> 25 march</b>\",\n            \"created_at\": \"2021-05-22T17:34:44.000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "3. get all notice(pagination)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/notice/get-all/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"notice",
+								"get-all",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "3. get all notice(pagination)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/notice/get-all/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"notice",
+										"get-all",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "222"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"de-OvnnIi1n7bRO1vz/rYO3HpDVuEE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 May 2021 18:12:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"all from list\",\n    \"response\": [\n        {\n            \"id\": 2,\n            \"publisher_id\": 2,\n            \"title\": \"Course Offering Spring 2021\",\n            \"description\": \"Course Offering Spring 2021 on <b> 25 march</b>\",\n            \"created_at\": \"2021-05-22T17:34:44.000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "4. delete single notice",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/notice/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"notice",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "4. delete single notice",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2727/notice/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2727",
+									"path": [
+										"notice",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "67"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43-wlsLpD4L4jMud1B0qJEzI6xmKqU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 May 2021 17:53:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Notice Deleted Succesfully\",\n    \"response\": 3\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "email verify",
+			"item": [
+				{
+					"name": "get link",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/student/get-link/:id/:email",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"student",
+								"get-link",
+								":id",
+								":email"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "25",
+									"description": "not student_id, its mysql id"
+								},
+								{
+									"key": "email",
+									"value": "jokermr143@gmail.com",
+									"description": "email"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify link",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2727/student/verify/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2727",
+							"path": [
+								"student",
+								"verify",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.zulkar.me/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zulkar",
+						"me"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get local",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2727/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2727",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

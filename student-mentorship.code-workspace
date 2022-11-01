@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "student-mentorship-react-ao-master"
+		},
+		{
+			"path": "student-mentorship-react-dept-master"
+		},
+		{
+			"path": "student-mentorship-react-student-master"
+		},
+		{
+			"path": "..\\..\\CSESMS\\student-mentorship-api"
+		},
+		{
+			"path": "student-mentorship-react-faculty-master"
+		}
+	],
+	"settings": {
+		"editor.wordWrap": "on",
+		"editor.bracketPairColorization.enabled": true
+	}
+}
