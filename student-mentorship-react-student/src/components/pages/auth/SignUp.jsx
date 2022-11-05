@@ -56,6 +56,7 @@ export default function SignUp() {
             //setStudent(initvalue)
             history.push(URL.HOME)
         } catch (e) {
+            console.log(e.message);
             app.SET_RESPONSE(Response(false, "SignUP failed.", e.message, Define.BT_DANGER))
             app.STOP_LOADING()
         }

@@ -5,7 +5,6 @@ const express = require('express');
 const cors = require('cors')
 const cookieparser = require('cookie-parser');
 const auth_cookie = require('./routers/middleware/authMiddleware')
-
 const onConnected = require('./socket/main');
 require('dotenv').config();
 const app = express();
@@ -69,6 +68,7 @@ app.use('/career', auth_cookie, require('./routers/career/careerRouter'));
  */
 const port = process.env.PORT || 2828;
 const server = app.listen(port, () => {
+    console.log(port);
     console.log(`server running at http://localhost:${port}`)
 })
 
