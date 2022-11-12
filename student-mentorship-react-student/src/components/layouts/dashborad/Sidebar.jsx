@@ -42,13 +42,55 @@ export default function Sidebar() {
                 <li className="nav-item ">
                     <NavLink exact activeClassName="active" className="nav-link" to={URL.SKILL_LIST}>
                         <i className="fas fa-fw fa-award"></i>
-                        <span>Skill List</span>
+                        <span>Career Path</span>
+                    </NavLink>
+                </li>
+                <li className="nav-item ">
+                    <NavLink exact activeClassName="active" className="nav-link" to={URL.SKILL_LIST}>
+                        <i className="fas fa-fw fa-award"></i>
+                        <span>Suppliment</span>
+                    </NavLink>
+                </li>
+                <li className="nav-item ">
+                    <NavLink exact activeClassName="active" className="nav-link" to={URL.SKILL_LIST}>
+                        <i className="fas fa-fw fa-award"></i>
+                        <span>Soft Skill</span>
+                    </NavLink>
+                </li>
+                <li className="nav-item ">
+                    <NavLink exact activeClassName="active" className="nav-link" to={URL.SKILL_LIST}>
+                        <i className="fas fa-fw fa-award"></i>
+                        <span>Consultancy</span>
+                    </NavLink>
+                </li>
+                <li className="nav-item ">
+                    <NavLink exact activeClassName="active" className="nav-link" to={URL.SKILL_LIST}>
+                        <i className="fas fa-fw fa-award"></i>
+                        <span>Courses</span>
+                    </NavLink>
+                </li>
+                <li className="nav-item ">
+                    <NavLink exact activeClassName="active" className="nav-link" to={URL.SKILL_LIST}>
+                        <i className="fas fa-fw fa-award"></i>
+                        <span>Workshop/Seminar</span>
+                    </NavLink>
+                </li>
+                <li className="nav-item ">
+                    <NavLink exact activeClassName="active" className="nav-link" to={URL.SKILL_LIST}>
+                        <i className="fas fa-fw fa-award"></i>
+                        <span>Content</span>
+                    </NavLink>
+                </li>
+                <li className="nav-item ">
+                    <NavLink exact activeClassName="active" className="nav-link" to={URL.TODO_LIST}>
+                        <i className="fas fa-fw fa-award"></i>
+                        <span>To-Do</span>
                     </NavLink>
                 </li>
                 <li className="nav-item ">
                     <NavLink exact activeClassName="active" className="nav-link" to={URL.TICKET_LIST}>
                         <i className="fas fa-fw fa-award"></i>
-                        <span>Ticket List</span>
+                        <span>Ticket</span>
                     </NavLink>
                 </li>
 
@@ -67,12 +109,6 @@ export default function Sidebar() {
                     </div>
                 </li> */}
 
-                <li className="nav-item ">
-                    <NavLink exact activeClassName="active" className="nav-link" to={URL.TODO_LIST}>
-                        <i className="fas fa-fw fa-award"></i>
-                        <span>To-Do List</span>
-                    </NavLink>
-                </li>
 
                 <li className="nav-item ">
                     <NavLink exact activeClassName="active" className="nav-link" to={URL.NOTICE_LIST}>

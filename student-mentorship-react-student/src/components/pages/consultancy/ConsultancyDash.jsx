@@ -1,16 +1,16 @@
 import React from 'react'
 import URL from './../../../utils/helpers/URL';
 import { Link } from 'react-router-dom';
-import careerImg from "../../../assets/img/career.png";
+import consultancyImg from "../../../assets/img/consultancy.png";
 
-export default function CareerDash() {
+export default function ConsultancyDash() {
     return (
         <div className="media d-flex justify-content-between">
             <div className=" ">
-                <img src={careerImg} alt="" className="icon_width" />
+                <img src={consultancyImg} alt="" className="icon_width" />
             </div>
             <div className="media-body ml-4">
-                Start Your Career
+                Select Your Consultant
                 <br />
                 <Link to={URL.SKILL_LIST}>Start Now</Link>
             </div>
