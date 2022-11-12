@@ -10,6 +10,9 @@ import ConsultancyDash from '../consultancy/ConsultancyDash';
 import CourseDash from '../Courses/CourseDash';
 import SeminarDash from '../seminar/SeminarDash';
 import ContentDash from '../content/ContentDash';
+import SubmitTicketDash from '../submitTicket/SubmitTicketDash';
+import TodoDash from '../todo/TodoDash';
+import SoftSkillDash from '../softSkill/SoftSkillDash';
 
 
 export default function Home() {
@@ -25,7 +28,7 @@ export default function Home() {
                          <DashCard title="Suppliment" > <SupplimentDash/></DashCard> 
                     </Col>
                     <Col>
-                        <DashCard title="Soft Skills" />
+                        <DashCard title="Soft Skills" > <SoftSkillDash/> </DashCard>
                     </Col>
                 </Row>
                 <Row className="mt-2">
@@ -44,10 +47,10 @@ export default function Home() {
                         <DashCard title="Content" > <ContentDash/> </DashCard>
                     </Col>
                     <Col>
-                         <DashCard title="To-Do" /> 
+                         <DashCard title="To-Do" > <TodoDash/> </DashCard> 
                     </Col>
                     <Col>
-                        <DashCard title="Submit Ticket" />
+                        <DashCard title="Submit Ticket" > <SubmitTicketDash/> </DashCard>
                     </Col>
                 </Row>
                 <br />
