@@ -12,7 +12,7 @@ export default function ConsultancyDash() {
             <div className="media-body ml-4">
                 Select Your Consultant
                 <br />
-                <Link to={URL.SKILL_LIST}>Start Now</Link>
+                <button><Link to={URL.SKILL_LIST}>Start Now</Link></button>
             </div>
         </div>
     )

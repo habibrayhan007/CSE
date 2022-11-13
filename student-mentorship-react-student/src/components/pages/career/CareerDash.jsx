@@ -12,7 +12,7 @@ export default function CareerDash() {
             <div className="media-body ml-4">
                 Start Your Career
                 <br />
-                <Link to={URL.SKILL_LIST}>Start Now</Link>
+                <button><Link to={URL.CAREER_PATH}>Start Now</Link></button>
             </div>
         </div>
     )

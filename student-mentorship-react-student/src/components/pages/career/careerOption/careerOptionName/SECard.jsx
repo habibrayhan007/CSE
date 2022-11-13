@@ -1,16 +1,16 @@
 import React from 'react'
-import URL from './../../../utils/helpers/URL';
+import URL from '../../../../../utils/helpers/URL';
 import { Link } from 'react-router-dom';
-import contentImg from "../../../assets/img/content.png";
+//import careerImg from "../../../assets/img/career.png";
 
-export default function ContentDash() {
+export default function SECard() {
     return (
         <div className="media d-flex justify-content-between">
             <div className=" ">
-                <img src={contentImg} alt="" className="icon_width" />
+                {/* <img src={careerImg} alt="" className="icon_width" /> */}
             </div>
             <div className="media-body ml-4">
-                Start Writing Content
+                Start Your Software Engineering Career
                 <br />
                 <button><Link to={URL.SKILL_LIST}>Start Now</Link></button>
             </div>

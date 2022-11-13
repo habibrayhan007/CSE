@@ -22,7 +22,8 @@ export default function Home() {
 
                 <Row className="mt-2">
                     <Col>
-                        <DashCard title="Career Path" ><CareerDash /></DashCard>
+                        <DashCard title="Career Path"><CareerDash /></DashCard>
+                        
                     </Col>
                     <Col>
                          <DashCard title="Suppliment" > <SupplimentDash/></DashCard> 

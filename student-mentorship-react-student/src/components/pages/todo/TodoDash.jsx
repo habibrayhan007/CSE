@@ -12,7 +12,7 @@ export default function TodoDash() {
             <div className="media-body ml-4">
                 Set your work time
                 <br />
-                <Link to={URL.TODO_LIST}>Start Now</Link>
+                <button><Link to={URL.TODO_LIST}>Start Now</Link></button>
             </div>
         </div>
     )

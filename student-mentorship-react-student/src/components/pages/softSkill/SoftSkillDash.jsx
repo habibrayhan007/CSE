@@ -10,9 +10,9 @@ export default function SoftSkillDash() {
                 <img src={sskillImg} alt="" className="icon_width" />
             </div>
             <div className="media-body ml-4">
-                Start Your Career
+                Add Your Skill
                 <br />
-                <Link to={URL.SKILL_LIST}>Start Now</Link>
+                <button><Link to={URL.SKILL_LIST}>Start Now</Link></button>
             </div>
         </div>
     )

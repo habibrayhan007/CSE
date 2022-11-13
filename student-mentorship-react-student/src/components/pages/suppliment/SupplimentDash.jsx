@@ -12,7 +12,7 @@ export default function SupplimentDash() {
             <div className="media-body ml-4">
                 Suppliment
                 <br />
-                <Link to={URL.SKILL_LIST}>Start Now</Link>
+                <button className="primary"><Link to={URL.SKILL_LIST}>Start Now</Link></button>
             </div>
         </div>
     )

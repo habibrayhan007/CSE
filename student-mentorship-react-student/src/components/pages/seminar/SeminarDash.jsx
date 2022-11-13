@@ -10,9 +10,9 @@ export default function SeminarDash() {
                 <img src={seminarImg} alt="" className="icon_width" />
             </div>
             <div className="media-body ml-4">
-                See upcoming Workshop/Seminar
+                See upcoming Events
                 <br />
-                <Link to={URL.SKILL_LIST}>Start Now</Link>
+                <button><Link to={URL.SKILL_LIST}>Start Now</Link></button>
             </div>
         </div>
     )

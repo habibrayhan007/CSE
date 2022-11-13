@@ -1,5 +1,5 @@
 import React from 'react'
-import URL from './../../../utils/helpers/URL';
+import URL from '../../../utils/helpers/URL';
 import { Link } from 'react-router-dom';
 import ticketImg from "../../../assets/img/tickets.png";
 
@@ -12,7 +12,7 @@ export default function SubmitTicketDash() {
             <div className="media-body ml-4">
                 Tell us about your problem
                 <br />
-                <Link to={URL.TICKET_LIST}>Start Now</Link>
+                <button><Link to={URL.TICKET_LIST}>Start Now</Link></button>
             </div>
         </div>
     )

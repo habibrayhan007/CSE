@@ -12,7 +12,7 @@ export default function CourseDash() {
             <div className="media-body ml-4">
                 Start Your Course
                 <br />
-                <Link to={URL.SKILL_LIST}>Start Now</Link>
+                <button><Link to={URL.SKILL_LIST}>Start Now</Link></button>
             </div>
         </div>
     )

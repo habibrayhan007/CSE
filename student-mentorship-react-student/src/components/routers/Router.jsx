@@ -7,6 +7,7 @@ import NotFound from "./../pages/404/index";
 import SignIn from "./../pages/auth/SignIn";
 import Contributor from "./../pages/contributor/Contributor";
 import Home from "./../pages/dashboard/Home";
+import CareerOption from "../pages/career/careerOption/CareerOption";
 import SingleTicket from "./../pages/ticket/SingleTicket";
 import TicketList from "./../pages/ticket/TicketList";
 import Notice from "../pages/notice/Notice";
@@ -20,6 +21,7 @@ export default function Router() {
       <Switch>
         <Route path={URL.SIGN_IN} component={SignIn}></Route>
         <Route exact path={URL.HOME} component={Home}></Route>
+        <Route exact path={URL.CAREER_PATH} component={CareerOption}></Route>
         <Route path={URL.SIGN_UP} component={SignUp}></Route>
         <Route path={URL.TODO_LIST} component={Todo}></Route>
         <Route exact path={URL.TICKET_LIST} component={TicketList}></Route>
