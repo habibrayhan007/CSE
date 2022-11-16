@@ -124,6 +124,11 @@ export default function SkillList() {
                         <SkillTable skill_list={skill_list} />
                     </>}
                 </Row>
+                <Row >
+                    <Col className="d-flex justify-content-center mt-3 mb-3">
+                        <Button className="mr-2">Give Test</Button>
+                    </Col>
+                </Row>
             </Main>
         </ProtectedPage>
     )

@@ -1,5 +1,5 @@
 import React from 'react'
-import URL from '../../../../../utils/helpers/URL';
+import URL from '../../../../../../utils/helpers/URL';
 import { Link } from 'react-router-dom';
 //import careerImg from "../../../assets/img/career.png";
 
