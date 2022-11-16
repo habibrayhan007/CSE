@@ -127,7 +127,29 @@ INSERT INTO `notice` (`id`, `publisher_id`, `title`, `description`, `created_at`
 
 -- --------------------------------------------------------
 
+
 --
+-- Table structure for table `career_path`
+--
+
+CREATE TABLE `career_path` (
+  `id` bigint(20) UNSIGNED NOT NULL, 
+  `title` varchar(200) DEFAULT NULL, 
+  `video_url` varchar(200) DEFAULT NULL, 
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP 
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+--
+-- Dumping data for table `skill`
+--
+
+INSERT INTO `career_path` (
+  `id`, `title`, `video_url`, `created_at`) VALUES
+(1, 'Career Paths for Software Engineers', 'https://www.youtube.com/embed/oGy_uK6FrgE', '2021-07-08 18:24:37');
+
+
+---
 -- Table structure for table `question`
 --
 
@@ -429,6 +451,13 @@ ALTER TABLE `skill`
 ALTER TABLE `students`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `student_id` (`student_id`);
+
+--
+
+-- Indexes for table `career_path`
+--
+ALTER TABLE `career_path`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `student_skill_list`
